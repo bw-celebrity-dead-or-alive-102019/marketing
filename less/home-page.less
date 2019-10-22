@@ -1,38 +1,81 @@
 .home{
+    background-color: @green;
+    @media @tablet{
+        width: 100%;
+    }
+    @media @mobile{
+        width: 100%;
+    }
 
     header{
         background-color: @yellow;
-        display: flex;
-        text-align: left;
+        display: flex;                
         padding-top: 5%;
         padding-bottom: 5%;
+        @media @tablet{
+            flex-direction: column;
+            width: 100%;
+            padding-bottom: 0;
+        }
+        
+        
         
                 
         #celeb{
-
+            
+            text-align: left;
             margin-left: 5%;
             h2{
                 text-align: center;
             }
+            p{
+                @media @tablet{
+                    text-align: center;
+                }
+
+            }
+            
 
         }
         #buttons{
             display: flex;
             flex-direction: column;
             width: 20%;
+            
+            @media @tablet{
+                width: 100%;
+                align-items: center;
+            
+            }
+            
             button{
                 margin-left: 15%;
+                border: 2px solid black;
+                @media @tablet{                    
+                    width: 20%;
+                    margin:0;
+                }
             }
             .take{
                 margin-top: 20%;
                 background-color:@red;
                 height: 25%;
+                @media @tablet{
+                    margin-top: 5%;
+                                     
+                    
+                }
             
             }
             .sign{
                 margin-top: 20%;
                 background-color: @teal;
                 height: 25%;
+                @media @tablet{
+                    margin-top: 5%;
+                    height: 50%;                
+                    
+                }
             }
            
         }
@@ -45,10 +88,15 @@
             display: flex;
             justify-content: space-between;
             padding-top: 10%;
-            padding-bottom: 10%;                  
+            padding-bottom: 10%;
+                           
         
             img{
-                width: 30%;               
+                width: 30%;
+                border: 4px solid black;  
+                @media @tablet{
+                    display: none;
+                }               
                 
             }
         }
@@ -57,35 +105,53 @@
     .about{
         background-color: @yellow;
         display: flex;
+        flex-direction: column-reverse;
         padding-top: 2%;
         padding-bottom: 2%;
-
-
-        .box1{
+        padding-left: 2%;
+        @media @tablet{
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            align-items: center;
             
-            padding-left: 2%;
-            
-        }
+        }   
 
-        .box2{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-           
-            padding-left: 2%;
-            
+        .box{
+            display:flex; 
+            width: 100%;           
+            @media @tablet{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 80%;
+                               
+            }
 
-        }
+
+            .box1{
+                display: flex;
+                flex-direction: row; 
+               
+                }
+            .box2{
+                display: flex;
+                flex-direction: row;
+                
+                }
+            }
 
         .info{
             width: 90%;
+            @media @tablet{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }   
             
 
             h2{
                 text-align: center;
+                
             }
             p{
 
@@ -95,13 +161,18 @@
 
         }
         img{
-            border: 5px solid white;
-            width: 100%;
-            
-        }
+            border: 5px solid white; 
+            width: 50%;
+            @media @tablet{                
+                width: 100%;
+            }
+            @media @mobile{
+                display: none;
+            } 
 
 
     }
 
+}
 }
 

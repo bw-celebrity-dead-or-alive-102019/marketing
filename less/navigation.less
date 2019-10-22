@@ -1,0 +1,37 @@
+.nav{
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 2%;
+    @media @mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    h2{
+        
+        background-color: @orange;
+        border: 2px solid black;
+        text-align: center;
+        border-radius: 5px;
+        padding-bottom: 1%;
+        padding-top: 1%;  
+        padding-right: 2%; 
+        padding-left: 2%;   
+    }
+    .links{
+        width: 100%;
+        display: flex;
+        justify-content:  space-between;
+        align-items: baseline;
+        margin-left: 25%;
+        a{
+            font-size: 1.5rem;
+        } 
+        @media @mobile{
+            margin-top: 2%;
+            align-items: center;
+            margin-left: 0;
+        }           
+
+    }
+}
