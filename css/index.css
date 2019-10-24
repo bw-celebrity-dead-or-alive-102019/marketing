@@ -214,6 +214,10 @@ footer {
 .home {
   background-color: #77DB25;
 }
+.home a {
+  text-decoration: none;
+  color: black;
+}
 @media (max-width: 650px) {
   .home {
     width: 100%;
