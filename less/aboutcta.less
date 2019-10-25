@@ -1,0 +1,79 @@
+.callToActionContainerTop {
+  .width-Height;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.callToActionHeader {
+  width: 100%;
+  height: 150px;
+  border: 2px solid black;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: @citrine;
+  @media (max-width: 768px) {
+    background-color: @citrine;
+  }
+  @media (max-width: 375px) {
+    .width-Height;
+    padding: 2% 0;
+    border: 1px solid black;
+    text-align: center;
+  }
+}
+
+.callToActionImagesTop {
+  .width-Height;
+  border: 2px solid black;
+  display: inline-flex;
+  flex-flow: row wrap;
+  flex: 1;
+  background-color: @alien-armpit;
+  @media (max-width: 768px) {
+    padding: 8%;
+    background-color: @citrine;
+  }
+  @media (max-width: 375px) {
+    padding: 0;
+    flex-direction: column;
+    background-color: @turquoise-blue;
+  }
+  a {
+    width: 100%;
+    height: auto;
+    padding: 10%;
+    padding-top: 4%;
+    display: inline-flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    font-size: 2.5rem;
+    text-decoration: none;
+    font-family: "Sancreek", cursive;
+    text-align: center;
+  }
+  img {
+    width: fit-content;
+    height: fit-content;
+    padding: 20%;
+    border: 2px solid black;
+    display: inline-flex;
+    flex: 1;
+    background-color: @turquoise-blue;
+    @media (max-width: 375px) {
+      padding: 5%;
+      background-color: @orange-red;
+    }
+  }
+}
+
+.dead {
+  font-family: "Chewy", cursive;
+  font-size: 3rem;
+}
+
+.alive {
+  font-family: "Sancreek", cursive;
+  font-size: 3rem;
+}
