@@ -61,9 +61,7 @@
                 }
             }
             .take{
-                margin-top: 20%;
-                background-color:@red;
-                height: 25%;
+                .button-class(20%, @red, 25%);
                 @media @tablet{
                     margin-top: 5%;
                                      
@@ -72,9 +70,7 @@
             
             }
             .sign{
-                margin-top: 20%;
-                background-color: @teal;
-                height: 25%;
+                .button-class(20%, @teal, 25%);
                 @media @tablet{
                     margin-top: 5%;
                     height: 50%;                
@@ -133,13 +129,11 @@
 
 
             .box1{
-                display: flex;
-                flex-direction: row; 
+                .box-class(); 
                
                 }
             .box2{
-                display: flex;
-                flex-direction: row;
+                .box-class();
                 
                 }
             }
